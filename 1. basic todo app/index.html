@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice -JS</title>
+    <link rel="stylesheet" href="src/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* error fix extra style */
+        .line-through {
+            text-decoration-line: line-through;
+        }
+    </style>
+</head>
+
+<body class="h-screen flex justify-center bg-gradient-to-bl from-gray-400 to-gray-500 ">
+
+
+
+
+    <div class="mt-40">
+        <h1 class="text-center mb-3 text-white font-bold text-xl">What Do You Want To Add</h1>
+        <div class="bg-white p-4 rounded-md">
+            <form action="#">
+                <input class="border border-gray-400 w-96 text-base py-1 px-3 outline-gray-300" type="text"
+                    name="input_text_box" id="text_input">
+                <input
+                    class="ml-1 bg-purple-500 hover:bg-purple-600 text-white px-4 py-1 rounded-md active:translate-x-[1.5px] active:translate-y-[1px]"
+                    type="submit" name="submit_btn" value="Add">
+            </form>
+        </div>
+        <div class="bg-white mt-[3%] rounded-md pb-[2px]" id="output">
+            <h1 class="text-center capitalize font-medium border-b-2 border-[#666666] bg-gray-200 rounded-t-md py-4">
+                note here</h1>
+            <ul>
+                <!-- <li class="flex justify-between items-center border-b-[2px] p-4">
+                    <span class="capitalize cursor-pointer">sharif</span>
+                    <span>
+                        <i
+                            class="fa-regular fa-square-check mx-2 text-md text-gray-400 hover:bg-green-400 hover:text-white"></i>
+                        <i class="fa-solid fa-trash text-red-400 hover:text-red-500 cursor-pointer"></i>
+                    </span>
+                </li> -->
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="src/index.js"></script>
+
+</body>
+
+</html>

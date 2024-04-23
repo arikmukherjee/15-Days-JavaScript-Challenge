@@ -1,0 +1,384 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ---------------------------------------------------- */
+/* round slider meter project | make by SF-Sharif (23-2-24) | */
+
+.round-container .round-slider {
+    border: 1px solid;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.round-container .round-slider::after {
+    content: '';
+    border: 4px solid;
+    border-color: inherit;
+    position: absolute;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+}
+
+/* ul li style */
+.round-container .round-slider ul::after {
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.round-container .round-slider ul li {
+    list-style: none;
+    border: 1px solid;
+    position: absolute;
+    width: calc(100% - 10px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.round-container .round-slider ul li:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.round-container .round-slider ul li:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.round-container .round-slider ul li:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.round-container .round-slider ul li:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.round-container .round-slider ul li:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+.round-container .round-slider ul li:nth-child(6) {
+    transform: translate(-50%, -50%);
+}
+
+.round-container .round-slider ul li:first-child,
+.round-container .round-slider ul li:last-child {
+    border-width: 4px;
+}
+
+/* label style */
+/* .round-container .round-slider .show-deg-number span {} */
+
+.round-container .round-slider .show-deg-number span::after {
+    position: absolute;
+    font-weight: bold;
+}
+
+.round-container .round-slider .show-deg-number span:nth-child(1)::after {
+    content: '0';
+    left: 49%;
+    top: 8%;
+}
+
+.round-container.full .round-slider .show-deg-number span:nth-child(1)::after {
+    content: '360';
+    left: 48%;
+    top: 8%;
+    top: 8%;
+}
+
+.round-container .round-slider .show-deg-number span:nth-child(2)::after {
+    content: '90';
+    left: 90%;
+    top: 48%;
+}
+
+.round-container .round-slider .show-deg-number span:nth-child(3)::after {
+    content: '180';
+    left: 47%;
+    top: 89%;
+}
+
+.round-container .round-slider .show-deg-number span:nth-child(4)::after {
+    content: '270';
+    left: 25PX;
+    top: 48%;
+}
+
+/* middle point style */
+.round-container .round-slider .middle-point {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #ff0000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+}
+
+.round-container .round-slider .middle-point span {
+    position: absolute;
+    /* width: 115px; */
+    /* height: 141px; */
+    /* background: #b78282; */
+    left: 8px;
+    top: -135px;
+    bottom: 25px;
+    border-left: 4px dotted #fd0000;
+}
+
+.round-container .round-slider .middle-point span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    /* background: black; */
+    border-top: 12px solid transparent;
+    border-left: 20px solid #5555556b;
+    border-bottom: 12px solid transparent;
+    transform: rotate(150deg);
+    left: -14px;
+    top: -20px;
+}
+
+.round-container.full .round-slider .middle-point span::after {
+    border-left: 20px solid #ff0000 !important;
+
+}
+
+
+
+/* ----------------------------- */
+
+/* ========================================================================= */
+/*                          input range style start                          */
+/* ========================================================================= */
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+    outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #9ad1e4;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    margin-top: -8px;
+    /* Centers thumb on the track */
+    background-color: #6f5252 !important;
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #6f5252 !important;
+    outline-offset: 1.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+    background-color: #2db4e1;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+    background-color: #6f5252 !important;
+    border: none;
+    /*Removes extra border that FF applies*/
+    border-radius: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    outline: 3px solid #6f5252 !important;
+    outline-offset: 0.125rem;
+}
+
+/* ========================================================================= */
+/*                          input range style end                            */
+/* ========================================================================= */
+
+.input-box {
+    height: 60%;
+}
+
+.input-box p {
+    border: 1px solid;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: -40px;
+    left: 24px;
+}
+
+.input-box p::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    transform: translateX(-50%) rotate(45deg);
+    left: 50%;
+    top: 82%;
+    border: 1px solid;
+    border-left: 0;
+    border-top: 0;
+}
+
+
+input[type=range][orient=vertical] {
+    appearance: slider-vertical;
+    width: 100px;
+    height: 100%;
+    padding: 0 5px;
+}
+
+
+/* ----------- responsive ------------- */
+
+@media only screen and (max-width: 555px) {
+    .round-container .round-slider {
+        width: 250px;
+        height: 250px;
+    }
+
+    .round-container .round-slider .middle-point span {
+
+        left: 8px;
+        top: -45px;
+        border-left: 3px dotted #fd0000;
+    }
+
+    .round-container .round-slider .show-deg-number span:nth-child(1)::after,
+    .round-container .round-slider .show-deg-number span:nth-child(2)::after,
+    .round-container .round-slider .show-deg-number span:nth-child(3)::after,
+    .round-container .round-slider .show-deg-number span:nth-child(4)::after {
+        font-size: 12px;
+    }
+
+    .round-container .round-slider .show-deg-number span:nth-child(2)::after {
+        top: 47.5%;
+        left: 88%;
+    }
+
+    .round-container .round-slider .show-deg-number span:nth-child(3)::after {
+        top: 87%;
+    }
+
+    input[type=range][orient=vertical] {
+        height: 75%;
+    }
+
+    .round-container.full .round-slider .show-deg-number span:nth-child(1)::after {
+        left: 47%;
+    }
+
+}
+
+@media only screen and (max-width: 345px) {
+    .round-container .round-slider {
+        width: 150px;
+        height: 150px;
+    }
+
+    .round-container .round-slider .middle-point {
+        height: 15px;
+        width: 15px;
+    }
+
+    .round-container .round-slider .middle-point span {
+        top: -30px;
+        border-left: 2px dotted #fd0000;
+        bottom: 18px;
+    }
+
+    .round-container .round-slider .middle-point span::after {
+        border-top: 5px solid transparent;
+        border-left: 9px solid #5555556b;
+        border-bottom: 5px solid transparent;
+        left: -6px;
+        top: -9px;
+    }
+
+    .round-container.full .round-slider .middle-point span::after {
+        border-left: 9px solid #ff0000 !important;
+    }
+    
+    .round-container .round-slider .show-deg-number span:nth-child(1)::after,
+    .round-container .round-slider .show-deg-number span:nth-child(2)::after,
+    .round-container .round-slider .show-deg-number span:nth-child(3)::after,
+    .round-container .round-slider .show-deg-number span:nth-child(4)::after {
+        font-size: 10px;
+    }
+    
+    .round-container.full .round-slider .show-deg-number span:nth-child(1)::after{
+        left: 45%;
+        top: 14px;
+    }
+    
+    .round-container .round-slider .show-deg-number span:nth-child(1)::after{
+        left: 48%;
+        top: 11%;
+    }
+
+    .round-container .round-slider .show-deg-number span:nth-child(2)::after {
+        top: 47.5%;
+        left: 82%;
+    }
+    
+    .round-container .round-slider .show-deg-number span:nth-child(4)::after {
+        content: '270';
+        left: 19PX;
+        top: 46%;
+    }
+    
+    .round-container .round-slider .show-deg-number span:nth-child(3)::after {
+        top: 80%;
+    }
+    
+}

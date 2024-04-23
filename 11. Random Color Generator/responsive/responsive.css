@@ -1,0 +1,8 @@
+@media only screen and (min-width: 425px) {
+    .container {
+        width: 410px;
+        padding: 30px 25px;
+        box-shadow: 0 0 20px 0 black;
+        border: none;
+    }
+}

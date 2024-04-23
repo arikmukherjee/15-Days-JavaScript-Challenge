@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive/responsive.css">
+    <!-- font-awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- javascript -->
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Random Password Generator</h1>
+        <div class="box">
+            <div class="header">
+                <input type="text" name="text" id="pass_show" readonly value="" >
+                <button type="button" id="copy-btn"><i class="fa-regular fa-copy"></i></button>
+                <!-- <p>copy</p> -->
+            </div>
+            <div class="body">
+                <div>
+                    <span>Password Length</span>
+                    <span><input type="number" max="99" id="password_length" value="8"></span>
+                </div>
+                <div>
+                    <span>Contain Uppercase Letters</span>
+                    <span>
+                        <input type="checkbox" name="toggle_btn" id="toggle_btn">
+                        <label for="toggle_btn"></label>
+                    </span>
+                </div>
+                <div>
+                    <span>Contain Lowercase Letters</span>
+                    <span>
+                        <input type="checkbox" name="toggle_btn" id="toggle_btn-1">
+                        <label for="toggle_btn-1"></label>
+                    </span>
+                </div>
+                <div>
+                    <span>Contain Numbers</span>
+                    <span>
+                        <input type="checkbox" name="toggle_btn" id="toggle_btn-2">
+                        <label for="toggle_btn-2"></label>
+                    </span>
+                </div>
+                <div>
+                    <span>Contain Symbol</span>
+                    <span>
+                        <input type="checkbox" name="toggle_btn" id="toggle_btn-3">
+                        <label for="toggle_btn-3"></label>
+                    </span>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" id="Generate-Password">Generate Password</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

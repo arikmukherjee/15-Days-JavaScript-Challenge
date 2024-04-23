@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice -JS</title>
+    <link rel="stylesheet" href="src/tailwind.css">
+
+    <style>
+        button::before {
+            transition: height 1s, width 1s;
+        }
+    </style>
+</head>
+
+<body class="h-screen flex justify-center items-center bg-gray-400">
+
+
+
+
+
+    <button class="bg-white rounded-xl p-8 relative overflow-hidden before:contents-[''] before:bg-red-500 before:w-0 before:h-0 before:absolute before:left-[var(--x)] before:top-[var(--y)] hover:before:w-[950px] hover:before:h-[950px] before:translate-x-[-50%] before:translate-y-[-50%] before:rounded-full" type="button">
+        <span class="text-8xl uppercase font-bold text-gray-600 relative z-1 hover:text-white">button</span>
+    </button>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

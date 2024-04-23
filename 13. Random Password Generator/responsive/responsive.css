@@ -1,0 +1,68 @@
+
+@media only screen and (max-width: 425px) {
+    .container h1 {
+        font-size: 1.3rem;
+    }
+    .body div>span {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    .container h1 {
+        font-size: 1rem;
+    }
+
+    .header {
+        height: 40px;
+    }
+
+    .header input {
+        height: inherit;
+        font-size: 1rem;
+    }
+
+    .header button[type="button"] {
+        padding: 7.5px 20px;
+    }
+
+    .header button[type="button"] i {
+        font-size: 14px;
+    }
+
+    .body div>span {
+        font-size: 10px;
+    }
+
+    .body div input[type="number"] {
+        font-size: 8px;
+    }
+
+    .body div input[type="checkbox"]+label {
+        height: 12px;
+        width: 21px;
+    }
+
+    .body div input[type="checkbox"]+label::after {
+        height: 0.5rem;
+        width: 0.5rem;
+    }
+
+    .footer button[type="button"] {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+}
+
+
+@media only screen and (min-width: 425px) {
+    .box {
+        width: 430px;
+        margin: auto;
+        padding: 28px;
+
+    }
+}

@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('img/home\ background.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 5vw;
+    color: white;
+    text-shadow: 3px 3px 9px BLACK;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.container .join-btn {
+    padding: 5px 20px;
+    font-size: 2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 2px 3px 6px 0 #3b3232;
+    transition: all 0.1s;
+    position: relative;
+    overflow: hidden;
+    margin: 2% 0;
+}
+
+.container .join-btn:hover {
+    color: white;
+}
+
+
+.container .join-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.container .join-btn::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background: #69aec5;
+    left: var(--x_position);
+    top: var(--y_position);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.8s, height 10s;
+}
+
+.container .join-btn:hover::before {
+    width: 1000px;
+    height: 1000px;
+}
+
+
+.container .join-btn:active {
+    box-shadow: none;
+    transform: translate(2px, 3px);
+}
+
+/* ----- join form style ----- */
+
+.popup-container {
+    border: 1px solid;
+    padding: 10vh 10px;
+    text-align: center;
+    width: 30vw;
+    position: relative;
+    border-radius: 8px;
+    background-image: url('img/email.jpg');
+    background-size: cover;
+    background-position: 0% -107%;
+}
+
+.popup-container.active {
+    animation: ani-in 0.5s linear;
+}
+
+.popup-container.active-out {
+    animation: ani-out 0.5s linear;
+}
+
+@keyframes ani-in {
+    0% {
+        transform: translateY(-40%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes ani-out {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-40%);
+    }
+}
+
+
+.popup-container div {
+    position: absolute;
+    right: 2%;
+    top: 6%;
+    border: 1px solid;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
+
+.popup-container h4 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c35547;
+}
+
+.popup-container input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 22px;
+    padding: 8px 6px;
+}
+
+.popup-container input[type="submit"] {
+    text-transform: uppercase;
+    font-weight: 600;
+}

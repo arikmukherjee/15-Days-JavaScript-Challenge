@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 45vw;
+    }
+
+    .container .title h1 {
+        font-size: 1.4vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 50vw;
+    }
+
+    .container .title h1 {
+        font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 60vw;
+    }
+
+    .container .title h1 {
+        font-size: 1.8vw;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .container {
+        width: 90vw;
+    }
+
+    .container .title h1 {
+        font-size: 2.7vw;
+    }
+}

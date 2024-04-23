@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3a3737;
+}
+
+.container {
+    margin: 2% 0;
+    border: 1px solid white;
+}
+
+.container h1 {
+    color: white;
+    text-align: center;
+}
+
+.container .output {
+    background-color: rgb(0, 0, 0);
+    height: 48vh;
+    width: 50%;
+    margin: 2% auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .output span {
+    background: url('https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png');
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    animation: ani 6s linear;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    100% {
+        transform: translate(-50%, -3000%);
+        opacity: 1;  
+        filter: hue-rotate(720deg);
+    }
+}

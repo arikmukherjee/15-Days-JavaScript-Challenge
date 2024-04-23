@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://cdn.britannica.com/62/156362-050-4E8FE282/Acacia-tree-savanna-Zimbabwe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0;
+    letter-spacing: 4px;
+    background-color: rgba(36, 31, 31, 0.377);
+    
+    width: 100%;
+    text-align: center;
+    
+}
+
+.box {
+    background-color: #5e975091;
+    border-radius: 4px;
+}
+
+.text {
+    background: #08a216;
+    padding: 8px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.num {
+    font-size: 130px;
+    color: white;
+    padding: 0 50px;
+}
+
+.contant {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: end;
+    grid-column-gap: 10px;
+}
+
+.day {
+    background: #166e4c;
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: white;
+    font-size: 20px; 
+}

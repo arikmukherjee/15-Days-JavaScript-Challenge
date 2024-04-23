@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.container {
+    border: 1px solid;
+    width: 35vw;
+    margin: 5% auto;
+    background: #5d4e4ec7;
+    padding: 10px 5px 5px 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container .icon {
+    position: absolute;
+    right: 0.3vw;
+    top: 5px;
+    border: 1px solid;
+    padding: 2px 6px;
+    border-radius: 15px;
+}
+
+.container .icon:active {
+    color: red;
+}
+
+
+.container .icon i {
+    font-size: 1.5vw;
+}
+
+
+.container .img-area {
+    border: 2px solid rgb(69, 110, 107);
+    width: 90%;
+    margin: 2% auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container .img-area img,
+.container .img-area video {
+    width: 100%;
+    /* object-fit: contain; */
+
+}
+
+
+
+
+.container .text-area {
+    text-align: center;
+}
+
+
+.container .title h1 {
+    font-size: 1.1vw;
+    padding: 5px 0;
+    letter-spacing: 0.2px;
+}
+
+.container .text-body {
+    /* border: 1px solid; */
+    width: 86%;
+    margin: 1% auto;
+}
+
+.container .text-body p {
+    font-size: 15px;
+}
+
+.container .button-area {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: auto;
+}
+
+.container .button-area button[type="button"] {
+    padding: 5px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 3% 0;
+    border-radius: 8px;
+    box-shadow: 1px 2.5px 5px 0px #cfcfcf;
+}
+
+.container .button-area button[type="button"]:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+.extra {
+    color: #d7d0d0;
+    background: darkgray;
+    box-shadow: none !important;
+}
